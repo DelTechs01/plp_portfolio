@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>delronk - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -19,15 +25,24 @@
     <div class="hero">
         <div class="hero-content">
             <h1>Kweyu Delron Muyale</h1>
-            <p>Software Engineer | Network Engineer</p>
+            <p class="typed-text">Software Engineer | Network Engineer | Problem Solver</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
         <div class="hero-image"></div>
+        <canvas id="particles"></canvas>
     </div>
 
     <section id="about">
         <div class="about-content">
             <h2>About Me</h2>
-            <p>Hi! I'm Kweyu Delron, a passionate web developer with a love for creating functional and beautiful web experiences. I thrive on turning ideas into reality through clean code and innovative solutions.</p>
+            <p>I’m Kweyu Delron, a driven Software and Network Engineer with a passion for crafting innovative, scalable solutions. Currently pursuing a BSc in Software Engineering at Kirinyaga University, I specialize in full-stack web development, network optimization, and cybersecurity. My goal is to bridge the gap between technology and real-world impact through clean, efficient code and creative problem-solving.</p>
+            <div class="skills">
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Networking</span>
+            </div>
         </div>
         <div class="about-image"></div>
     </section>
@@ -36,10 +51,21 @@
         <h2>Educational Background</h2>
         <div class="card-grid">
             <div class="card">
-                <h3>Undergraduate Bsc Software Engineering</h3>
-                <p>Kirinyage University</p>
-                <p>2022 - 2026</p>
-                <a href="https://drive.google.com/file/d/1-Xy-Beq91Y-XWg7vazDd-H2gl-eWspYZ/view">Download My CV</a>
+                <h3>Undergraduate BSc Software Engineering</h3>
+                <p>Kirinyaga University</p>
+                <p>2022 - Present (Expected 2026)</p>
+                <p>Focus: Machine Learning/Artificial Intelligence,Full-Stack Development, Algorithms, Network Security</p>
+                <p>Status: Currently pursuing as an undergraduate</p>
+                <a href="https://drive.google.com/file/d/1-Xy-Beq91Y-XWg7vazDd-H2gl-eWspYZ/view" target="_blank">Download My CV</a>
+            </div>
+            <div class="card">
+                <h3>Software Engineering Scholarship</h3>
+                <p>Power Learn Project</p>
+                <p>2025 Feb-Cohort - Present</p>
+                <p>Courses: Database Management, Python, Introduction to Web Development</p>
+                <p>Software Engineering Essentials</p>
+                <p>Status: Actively learning and applying skills</p>
+                <a href="https://powerlearnproject.org/" target="_blank">Learn More</a>
             </div>
         </div>
     </section>
@@ -48,21 +74,21 @@
         <h2>Projects</h2>
         <div class="card-grid">
             <div class="card">
-                <h3>Project 1</h3>
-                <p>A modern web application built with [technologies]</p>
-                <a href="#">View Project</a>
+                <h3>Portfolio Website</h3>
+                <p>A dynamic, responsive portfolio built with HTML, CSS, and JavaScript, featuring particle animations and a modern UI.</p>
+                <a href="#" target="_blank">View Project</a>
             </div>
             <div class="card">
-                <h3>Project 2</h3>
-                <p>An innovative solution using [technologies]</p>
-                <a href="#">View Project</a>
+                <h3>Network Monitor</h3>
+                <p>A Python-based tool for real-time network traffic analysis using packet sniffing and visualization.</p>
+                <a href="#" target="_blank">View Project</a>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form class="contact-form">
+        <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
             <div class="form-group">
                 <input type="text" placeholder="Name" required>
             </div>
@@ -78,11 +104,15 @@
 
     <footer>
         <div class="social-links">
-            <a href="https://twitter.com/btripatakah" target="_blank">Twitter</a>
-            <a href="https://linkedin.com/in/delrok_kweyu" target="_blank">LinkedIn</a>
-            <a href="https://github.com/DelTechs01" target="_blank">GitHub</a>
-            <a href="https://instagram.com/comradesdci" target="_blank">Instagram</a>
+            <a href="https://twitter.com/btripatakah" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/delrok_kweyu" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/DelTechs01" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/comradesdci" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
+        <p>© 2025 Kweyu Delron Muyale</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
 </body>
 </html>
